@@ -1,0 +1,15 @@
+#N canvas 0 52 1918 1026 10;
+#X obj 47 43 soundfiler;
+#N canvas 0 50 450 250 (subpatch) 0;
+#X array buf 1e+07 float 2;
+#X coords 0 1 1e+07 -1 200 140 1 0 0;
+#X restore 201 19 graph;
+#X msg 47 20 read test.wav buf;
+#X obj 48 84 hsl 128 15 0 240 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 124 485 dac~;
+#X obj 42 168 cloud-gui~ 100 buf;
+#X connect 2 0 0 0;
+#X connect 3 0 5 1;
+#X connect 5 0 4 0;
+#X connect 5 1 4 1;

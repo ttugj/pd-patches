@@ -1,0 +1,18 @@
+#N canvas 0 52 958 1026 10;
+#X obj 65 119 random;
+#X msg 116 119 8.38861e+06;
+#X obj 65 64 inlet;
+#X obj 65 174 /;
+#X obj 65 198 outlet;
+#X text 62 38 standard uniform random variate;
+#X obj 65 147 + 0.5;
+#X obj 65 92 t b;
+#X obj 116 92 loadbang;
+#X connect 0 0 6 0;
+#X connect 1 0 0 1;
+#X connect 1 0 3 1;
+#X connect 2 0 7 0;
+#X connect 3 0 4 0;
+#X connect 6 0 3 0;
+#X connect 7 0 0 0;
+#X connect 8 0 1 0;

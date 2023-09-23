@@ -1,0 +1,11 @@
+#N canvas 0 52 958 1026 10;
+#X obj 98 88 uniformR;
+#X obj 98 111 expr -log($f1);
+#X obj 98 135 outlet;
+#X obj 98 40 inlet;
+#X text 97 11 standard exponential random variate;
+#X obj 98 64 t b;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 3 0 5 0;
+#X connect 5 0 0 0;
